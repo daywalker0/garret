@@ -57,7 +57,6 @@ $(document).ready(function($) {
                 $('.menu').css('display', "flex");
                 $('.menu_btn').css('display', "none");
             }
-            console.log(page1.top);
         });
 
         var page1 = $("#section1")[0].getBoundingClientRect();
@@ -81,10 +80,7 @@ $(document).ready(function($) {
         if (!windscroll) $('.menu-dots a').removeClass('active');
         $('.main section').each(function(i){
             if($(this).position().top <= windscroll - 70) {
-                //console.log($(this).position().top);
                 $('.menu-dots a.active').removeClass('active');
-
-                console.log("top="+windscroll+" div="+$(this).position().top);
 
                 if (windscroll) {
                     $('.menu-dots a').eq(i).addClass('active');

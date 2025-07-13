@@ -92,7 +92,6 @@ main {
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     background-color: transparent;
-    pointer-events: none;
 }
 #videofon {
     position: absolute;
@@ -123,8 +122,17 @@ main {
     bottom: 3%;
     left: 0;
     width: 41%;
-    
     z-index: 10;
+}
+.palma_l3-text {
+    font-size: 5.7rem;
+    line-height: 130%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'HighVoltage-Rough';
+    color: #fff;
+    text-align: center;
+    margin-top: -70px;
 }
 .page1 .palma_r3,.page3 .palma_r3{
     position: absolute;
@@ -153,6 +161,16 @@ main {
     height: 100vh;
     background-size: cover;
 }
+
+.page4 {
+    background: url("../img/fon22.jpg") no-repeat center center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page1_text_title {
     width: 55.26%;
     /*height: 14%;*/
@@ -177,7 +195,7 @@ main {
 
     background: url("../img/page1_text_title.svg") no-repeat center center;
     background-size: 100% 100%;
-    padding: 54px;
+    padding: 60px;
     text-align: center;
     /*transform: rotate(4.54deg);*/
 }
@@ -205,14 +223,14 @@ main {
 
 
 .page3_text_title {
-    width: 32%;
+    width: 40%;
     /*height: 14%;*/
     position: absolute;
-    top: 33%;
+    top: 40%;
     right: 16.5%;
     transform: rotate(-2.5deg);
     font-family: 'HighVoltage-Rough';
-    font-size: 11rem;
+    font-size: 14rem;
     font-weight: 400;
     line-height: 16rem;
     letter-spacing: 0em;
@@ -225,24 +243,23 @@ main {
 
 }
 .page3_text_title_bg {
-
     background: url("../img/tx31.png") no-repeat center center;
     background-size: 100% 100%;
-    padding: 0 54px;
+    padding: 30px 85px;
     text-align: center;
     /*transform: rotate(4.54deg);*/
 }
 
 
 .page3_text_title2 {
-    width: 30%;
+    width: 45%;
     /*height: 14%;*/
     position: absolute;
-    top: 47%;
+    top: 60%;
     right: 13.5%;
-    transform: rotate(-1.43deg);
+    transform: rotate(1deg);
     font-family: 'HighVoltage-Rough';
-    font-size: 11rem;
+    font-size: 14rem;
     font-weight: 400;
     line-height: 16rem;
     letter-spacing: 0em;
@@ -255,34 +272,12 @@ main {
 
 }
 .page3_text_title_bg2 {
-
     background: url("../img/tx31.png") no-repeat center center;
     background-size: 100% 100%;
-    padding: 0 54px;
+    padding: 10px 84px;
     text-align: center;
     padding-top: 15px;
     /*transform: rotate(4.54deg);*/
-}
-
-.page3_text_title3 {
-    width: 21%;
-    /*height: 14%;*/
-    position: absolute;
-    top: 63.5%;
-    right: 27.5%;
-    
-    font-family: 'HighVoltage-Rough';
-    font-size: 11rem;
-    font-weight: 400;
-    line-height: 16rem;
-    letter-spacing: 0em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-transform: uppercase;
-    overflow: hidden;
-
 }
 .page3_text_title_bg3 {
 
@@ -355,9 +350,7 @@ main {
 .soc-bt {
     width: 12%;
     height: 4.6%;
-    
     background: rgba(255, 255, 255, 0.60);
-    
     border-radius: 8px;
     position: absolute;
     top: 5.5%;
@@ -367,7 +360,6 @@ main {
     justify-content: flex-end;
 }
 .soc-bt .soc-bt_t {
-
     border-radius: 8px;
     font-family: 'HighVoltage-Rough';
     font-size: 2.7rem;
@@ -375,7 +367,7 @@ main {
     line-height: 7rem;
     letter-spacing: 0em;
     text-align: left;
-    color: #013763;
+    color: #231E22;
     width: 78%;
     height: 100%;
     display: flex;
@@ -449,7 +441,7 @@ main {
 .logo2 {
     display: block;
     position: absolute;
-    top: 2.8%;
+    top: 3.8%;
     left: calc(50% - 11.25%);
     width: 22.5%;
     height: 23%;
@@ -701,9 +693,140 @@ main {
 }
 
 
+.page4__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 33%;
+}
 
+.page4__wheare-buy {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+    margin: 0 0 60px 145px;
+}
 
+.page4__text_title {
+    font-size: 8.5rem;
+    line-height: 130%;
+    font-weight: 400;
+    font-family: 'HighVoltage-Rough', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
 
+.page4__text_title2 {
+    font-size: 4rem;
+    line-height: 130%;
+    font-weight: 400;
+    font-family: 'HighVoltage-Rough', sans-serif;
+    color: #043964;
+}
+
+.page4_text_title_bg {
+    background: url("../img/tx31.png") no-repeat center center;
+    background-size: 100% 100%;
+    padding: 30px 35px;
+    text-align: center;
+    transform: rotate(-2.54deg);
+}
+
+.page4_text_title_bg2 {
+    background: url("../img/page1_text_title.svg") no-repeat center center;
+    background-size: 95% 100%;
+    padding: 40px;
+    text-align: start;
+    transform: rotate(1.54deg);
+}
+
+.page4__partners {
+    display: flex;
+    flex-direction: column;
+}
+
+.partners__row-1, .partners__row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.page4__link-text {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.page4__link-text1 {
+    font-size: 4.6rem;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: 'HighVoltage-Rough', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.page4__link-text2 {
+    font-size: 6.7rem;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: 'HighVoltage-Rough', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.page4__link-text2 span {
+    color: #FFD627;
+    cursor: pointer;
+}
+
+.partner {
+    background: url("../img/partner-background.svg") no-repeat center center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.partner img {
+    width: 175px;
+}
+
+.footer {
+    margin-top: -10px;
+    position: relative;
+    z-index: 111;
+}
+
+.footer-background {
+    background: url("../img/footer-background.svg") no-repeat top center;
+    height: 10px;
+}
+
+.footer__container {
+    background-color: #fff;
+    padding: 0 80px;
+    display: flex;
+    min-height: 98px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.files {
+    display: flex;
+    gap: 40px;
+}
+
+.item {
+    font-size: 1.5rem;
+    line-height: 130%;
+    font-weight: 400;
+    font-family: 'HighVoltage-Rough', sans-serif;
+    text-transform: uppercase;
+    color: #043964;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 1920px) {
     .slide1, .slide2, .slide3 {
@@ -735,13 +858,13 @@ main {
 
 @media screen and (min-width: 1400px) {
     .page1_text_title {
-        font-size: 6.5rem;
+        font-size: 7.5rem;
         line-height: 8rem;
         width: 55.26%;
     }
     .page1 .palma_l3, .page3 .palma_l3 {
         width: auto;
-        height: 80%;
+        height: 85%;
     }
     .page1 .palma_l3 img, .page3 .palma_l3 img{
         width: auto;
@@ -776,7 +899,7 @@ main {
 
 @media screen and (max-width: 1400px) {
     .page1_text_title {
-        font-size: 6.5rem;
+        font-size: 7.5rem;
     }
     .page1_text_title2 {
         width: 37%;
@@ -787,10 +910,6 @@ main {
         line-height: 15rem;
     }
     .page3_text_title2 {
-        font-size: 9rem;
-        line-height: 15rem;
-    }
-    .page3_text_title3 {
         font-size: 9rem;
         line-height: 15rem;
     }
@@ -937,11 +1056,6 @@ main {
     .page3_text_title_bg2 {
         padding-top: 5px;
     }
-    .page3_text_title3 {
-        font-size: 7rem;
-        line-height: 13rem;
-        width: 16%;
-    }
     
 }
 @media (max-width: 900px) {
@@ -1005,11 +1119,6 @@ main {
     }
     .page3_text_title_bg2 {
         padding: 0 13px;
-    }
-    .page3_text_title3 {
-        font-size: 48px;
-        line-height: 130%;
-        width: 153px;
     }
     .page3_text_title_bg3 {
         padding: 0 13px;
@@ -1235,15 +1344,6 @@ main {
     }
     .page3_text_title_bg2 {
         padding: 10px 22px;
-    }
-
-    .page3_text_title3 {
-        font-size: 48px;
-        line-height: 50px;
-        width: 248px;
-        right: unset;
-        left: 5%;
-        top: 46%;
     }
     .page3_text_title_bg3 {
         padding: 10px 22px;

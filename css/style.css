@@ -699,6 +699,7 @@ main {
     align-items: center;
     position: absolute;
     top: 33%;
+    padding: 0 30px;
 }
 
 .page4__wheare-buy {
@@ -786,6 +787,7 @@ main {
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -896,8 +898,17 @@ main {
     }
 }
 
+@media screen and (max-width: 1650px) {
+    .page4__link-text {
+        margin-top: 20px;
+    }
+    .page4__wheare-buy {
+        margin: 0 0 20px 145px;
+    }
+}
 
-@media screen and (max-width: 1400px) {
+
+@media screen and (max-width: 1440px) {
     .page1_text_title {
         font-size: 7.5rem;
     }
@@ -908,6 +919,12 @@ main {
     .page3_text_title {
         font-size: 9rem;
         line-height: 15rem;
+    }
+    .page3_text_title_bg {
+        padding: 15px 60px;
+    }
+    .page3_text_title_bg2 {
+        padding: 0 50px;
     }
     .page3_text_title2 {
         font-size: 9rem;
@@ -924,7 +941,9 @@ main {
     .page1_text_inf div {
         font-size: 5.66rem;
     }
-
+    .page4__container {
+        top: 25%;
+    }
 }
 @media screen and (max-width: 1200px) {
     .vk2 {
@@ -982,6 +1001,26 @@ main {
     .soc-bt .soc-bt_t {
         font-size: 16px;
         line-height: 18px;
+    }
+    .page4__text_title {
+        font-size: 5rem;
+    }
+    .page4_text_title_bg {
+        padding: 10px 30px;
+    }
+    .page4_text_title_bg2 {
+        padding: 20px;
+    }
+    
+    .partners__row-1 {
+        flex-wrap: wrap;
+    }
+
+    .partners__row-1 .partner {
+        width: 40%;
+    }
+    .partners__row-1, .partners__row-2 {
+        gap: initial;
     }
 }
 
@@ -1134,6 +1173,13 @@ main {
     }
     .page1_text_inf {
         top: 307px;
+    }
+    .partners__row-2 {
+        flex-wrap: wrap;
+    }
+
+    .partners__row-2 .partner {
+        width: 40%;
     }
 }
 @media (max-width: 600px) {
@@ -1289,6 +1335,24 @@ main {
         top: 174px;
         left: calc(50% - 180px);
 
+    }
+
+    .page4__wheare-buy {
+        margin: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .page4__text_title {
+        font-size: 15em;
+    }
+    .page4__text_title2 {
+        font-size: 8em;
+    }
+    .page4_text_title_bg2 {
+        padding: 40px;
+    }
+    .partners__row-1, .partners__row-2 {
+        gap: 15px;
     }
 }
 

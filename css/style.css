@@ -157,7 +157,7 @@ main {
 
 .page4 {
     background: url("../img/fon22.jpg") no-repeat center center;
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
     overflow: hidden;
     display: flex;

@@ -92,7 +92,6 @@ main {
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     background-color: transparent;
-    pointer-events: none;
 }
 #videofon {
     /*position: absolute;*/
@@ -175,7 +174,7 @@ main {
     font-family: 'HighVoltage-Rough';
     font-size: 7.5rem;
     font-weight: 400;
-    line-height: 8rem;
+    line-height: 13rem;
     letter-spacing: 0em;
     display: flex;
     justify-content: center;
@@ -206,7 +205,7 @@ main {
     background: url("../img/page1_text_title2.svg") no-repeat center center;
     background-size: 100%;
      font-family: 'HighVoltage-Rough';
-     font-size: 13rem;
+     font-size: 11rem;
      font-weight: 400;
      line-height: 130%;
      letter-spacing: 0em;
@@ -221,16 +220,16 @@ main {
 
 
 .page3_text_title {
-    width: 32%;
+    width: 40%;
     /*height: 14%;*/
     position: absolute;
-    top: 33%;
-    right: 19.5%;
-    transform: rotate(-2.5deg);
+    top: 40%;
+    right: 16.5%;
+    transform: rotate(-2.5deg) !important;
     font-family: 'HighVoltage-Rough';
-    font-size: 11rem;
+    font-size: 14rem;
     font-weight: 400;
-    line-height: 14rem;
+    line-height: 16rem;
     letter-spacing: 0em;
     display: flex;
     justify-content: center;
@@ -244,23 +243,23 @@ main {
 
     background: url("../img/tx31.png") no-repeat center center;
     background-size: 100% 100%;
-    padding: 0 54px;
+    padding: 30px 85px;
     text-align: center;
     /*transform: rotate(4.54deg);*/
 }
 
 
 .page3_text_title2 {
-    width: 30%;
+    width: 45%;
     /*height: 14%;*/
     position: absolute;
-    top: 48%;
-    right: 16.5%;
+    top: 60%;
+    right: 13.5%;
     transform: rotate(-1.43deg);
     font-family: 'HighVoltage-Rough';
-    font-size: 11rem;
+    font-size: 14rem;
     font-weight: 400;
-    line-height: 14rem;
+    line-height: 16rem;
     letter-spacing: 0em;
     display: flex;
     justify-content: center;
@@ -270,8 +269,8 @@ main {
     overflow: hidden;
     z-index: 10;
 }
-.page3_text_title_bg2 {
 
+.page3_text_title_bg2 {
     background: url("../img/tx31.png") no-repeat center center;
     background-size: 100% 100%;
     padding: 0 54px;
@@ -374,7 +373,7 @@ main {
     line-height: 7rem;
     letter-spacing: 0em;
     text-align: left;
-    color: #013763;
+    color: #231E22;
     width: 78%;
     height: 100%;
     display: flex;
@@ -687,9 +686,9 @@ main {
     color: #fff;
 }
 
-.page4__link-text2 span {
+.page4__link-text2 a {
     color: #FFD627;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .partner {
@@ -736,7 +735,10 @@ main {
     font-family: 'HighVoltage-Rough', sans-serif;
     text-transform: uppercase;
     color: #043964;
-    cursor: pointer;
+}
+
+.item a {
+    color: #043964;
 }
 
 .menu-dots {
@@ -1478,9 +1480,3 @@ main {
 /*        display: none;*/
 /*    }*/
 /*}*/
-@media screen and (min-device-aspect-ratio: 16/9) {
-    .page1_text_title2 {
-        width: 28%;
-        font-size: 8rem;
-    }
-}

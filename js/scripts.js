@@ -1,15 +1,11 @@
-
-
-$(document).ready(function($) {
-
-
+$(document).ready(function ($) {
 
 
     $('body').append('<div class="overlay-box hidden"></div><div class="side-panel" id="side-panel"></div><div class="btn-close"><span class="icon-cl"></span></div>');
-    $('.to-mob').each(function() {
+    $('.to-mob').each(function () {
         $(this).clone().appendTo('#side-panel');
     });
-    $(".btn-menu").click(function(){
+    $(".btn-menu").click(function () {
         $('.overlay-box').fadeIn(200);
         $('#side-panel, .btn-close, .burger').addClass('active');
 
@@ -17,10 +13,40 @@ $(document).ready(function($) {
     });
 
 
+    const video1 = document.getElementById('video1');
+    const video2 = document.getElementById('video2');
+    const video3 = document.getElementById('video3');
+
+    video1.addEventListener('ended', function () {
+        video2.play();
+    });
+    video2.addEventListener('ended', function () {
+        video3.play();
+    });
+    video3.addEventListener('ended', function () {
+        video1.play();
+    });
+
+    video1.play();
+
+    const video1d = document.getElementById('video1d');
+    const video2d = document.getElementById('video2d');
+    const video3d = document.getElementById('video3d');
+
+    video1d.addEventListener('ended', function () {
+        video2d.play();
+    });
+    video2d.addEventListener('ended', function () {
+        video3d.play();
+    });
+    video3d.addEventListener('ended', function () {
+        video1d.play();
+    });
+
+    video1d.play();
 
 
-
-    $("a.js-header-arrow").click(function() {
+    $("a.js-header-arrow").click(function () {
         var elementClick = $(this).attr("href")
         var destination = $(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({
@@ -31,13 +57,13 @@ $(document).ready(function($) {
         return false;
     });
 
-    $('.menu_btn').on('click', function(e) {
+    $('.menu_btn').on('click', function (e) {
         e.preventDefault();
         $('.menu-box').toggleClass('menu_active');
         $('.menu_btn').toggleClass('menu_btn_active');
     });
 
-    $('.bt-close').on('click', function(e) {
+    $('.bt-close').on('click', function (e) {
         e.preventDefault();
         $('.menu-box').toggleClass('menu_active');
         $('.menu_btn').toggleClass('menu_btn_active');
@@ -69,27 +95,27 @@ $(document).ready(function($) {
             $('.menu_btn').css('display', "none");
         }
 
-    }else{
+    } else {
         $('.menu_btn').css('display', "block");
     }
 
 
-
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var windscroll = $(window).scrollTop();
         if (!windscroll) $('.menu-dots a').removeClass('active');
-        $('.main section').each(function(i){
-            if($(this).position().top <= windscroll - 70) {
+        $('.main section').each(function (i) {
+            if ($(this).position().top <= windscroll - 70) {
                 $('.menu-dots a.active').removeClass('active');
 
                 if (windscroll) {
                     $('.menu-dots a').eq(i).addClass('active');
-                };
+                }
+                ;
 
-            };
+            }
+            ;
         });
     }).scroll();
-
 
 
     function setCookie(name, value, days) {

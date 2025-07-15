@@ -361,11 +361,11 @@ main {
 }
 .soc-bt_vk:hover .soc-bt{
     background: #FFD05A;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px 0 0 8px;
 }
 .soc-bt_vk:hover .soc-bt_t{
-    background: #FFD05A;
-    border-radius: 8px 0 0 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 0 8px 8px 0;
 }
 .soc-bt_t {
     border-radius: 8px;
@@ -377,6 +377,7 @@ main {
     text-align: left;
     color: #231E22;
     width: 78%;
+    padding: 0 10px;
     height: 100%;
     cursor: pointer;
     display: flex;

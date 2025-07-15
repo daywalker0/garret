@@ -82,6 +82,15 @@ header img{
     width: 100%;
     display: block;
 }
+
+.header__0 {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    bottom: 2rem;
+    right: 10rem;
+    filter: brightness(0.1) invert(1);;
+}
 main {
     box-sizing: border-box;
     margin: 0;
@@ -342,20 +351,13 @@ main {
     overflow: hidden;
 }
 .soc-bt {
-    width: 12%;
-    height: 4.6%;
-    
-    background: rgba(255, 255, 255, 0.60);
-    
-    border-radius: 8px;
-    position: absolute;
-    top: 5.5%;
-    right: 9.8%;
-    z-index: 99;
     display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    pointer-events: auto;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #FFD05A;
+    border-radius: 8px;
 }
 .soc-bt:hover .soc-bt_t{
     background: #FFD05A;
@@ -365,7 +367,6 @@ main {
     border-radius: 8px 0 0 8px;
 }
 .soc-bt .soc-bt_t {
-
     border-radius: 8px;
     font-family: 'HighVoltage-Rough';
     font-size: 2.7rem;
@@ -383,12 +384,15 @@ main {
 }
 
 .soc-bt_vk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 22%;
-    background: #FFD05A;
     border-radius: 8px;
+    position: absolute;
+    top: 5.5%;
+    right: 9.8%;
+    z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    pointer-events: auto;
 }
 .soc-bt_vk img{
     width: 60%;

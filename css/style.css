@@ -376,6 +376,7 @@ main {
     line-height: 7rem;
     letter-spacing: 0em;
     text-align: left;
+    text-decoration: none;
     color: #231E22;
     width: 78%;
     margin: 0 10px;
@@ -1471,12 +1472,16 @@ main {
     }
     .page3_text_title {
         top: 22%;
-        font-size: 40px;
+        font-size: 60px;
+        width: 100%;
+        right: 0;
     }
     .page3_text_title2 {
-        top: 32%;
+        top: 35%;
         right: 3.5%;
-        font-size: 40px;
+        font-size: 60px;
+        width: 100%;
+        right: -55px;
     }
     .page3 .palma_l3 {
         bottom: -27px;
@@ -1580,28 +1585,18 @@ main {
          background: url("../img/2BG.jpg") no-repeat center bottom;
          background-size: cover;
      }
-
     .page3_text_title {
-        /*font-size: 48px;*/
-        /*line-height: 50px;*/
-        /*width: 260px;*/
-        /*right: unset;*/
-        /*left: 6%;*/
-        /*top: 23%;*/
-    }
-    .page3_text_title_bg {
-        /*padding: 10px 22px;*/
+        top: 22%;
+        font-size: 50px;
+        width: 100%;
+        right: 0;
     }
     .page3_text_title2 {
-        /*font-size: 48px;*/
-        /*line-height: 50px;*/
-        /*width: 248px;*/
-        /*right: unset;*/
-        /*left: 28%;*/
-        /*top: 34%;*/
-    }
-    .page3_text_title_bg2 {
-        /*padding: 10px 22px;*/
+        top: 34%;
+        right: 3.5%;
+        font-size: 50px;
+        width: 100%;
+        right: -55px;
     }
 }
 /*.video_box_gif {*/

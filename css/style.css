@@ -1624,7 +1624,7 @@ main {
     }
 }
 
-@media screen and (max-width: 1650px) and (min-width: 1240px) and (min-height: 860px) {
+@media screen and (max-width: 1650px) and (min-width: 1240px) and (min-height: 760px) {
     .page1_text_title2 {
         top: 30%;
         font-size: 9rem;

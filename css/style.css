@@ -361,11 +361,11 @@ main {
 }
 .soc-bt_vk:hover .soc-bt{
     background: #FFD05A;
-    border-radius: 8px 0 0 8px;
 }
-.soc-bt_vk:hover .soc-bt_t{
+.soc-bt_t:hover{
     background: rgba(255, 255, 255, 0.6);
-    border-radius: 0 8px 8px 0;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .soc-bt_t {
     border-radius: 8px;
@@ -377,12 +377,13 @@ main {
     text-align: left;
     color: #231E22;
     width: 78%;
-    padding: 0 10px;
+    margin: 0 10px;
     height: 100%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .soc-bt_vk {
@@ -1051,18 +1052,6 @@ main {
     /*.page1 .palma_r3,.page1 .palma_r3 {*/
     /*    width: 540px;*/
     /*}*/
-    .soc-bt {
-        height: 32px;
-        width: 138px;
-    }
-    .soc-bt_vk {
-        width: 32px;
-        height: 32px;
-    }
-    .soc-bt .soc-bt_t {
-        font-size: 16px;
-        line-height: 18px;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1102,12 +1091,6 @@ main {
         height: 15px;
         border: 2px solid #FFF;
     }
-    /*.soc-bt .soc-bt_t {*/
-    /*    font-size: 7.3rem;*/
-    /*}*/
-    /*.soc-bt_vk img {*/
-    /*    width: 43%;*/
-    /*}*/
     .page1_text_title2 {
         width: 360px;
         font-size: 47px;
@@ -1123,9 +1106,6 @@ main {
     #cookie_note p {
         margin: 0;
     }
-    /*.soc-bt {*/
-    /*    height: 5.9%;*/
-    /*}*/
     .page3_text_title {
         font-size: 7rem;
         line-height: 13rem;
@@ -1151,7 +1131,7 @@ main {
         padding: 0 30px;
     }
     .page4__container {
-        top: 17%;
+        top: 14%;
     }
     .page4__wheare-buy {
         gap: 50px;
@@ -1179,6 +1159,19 @@ main {
 
     .item {
         font-size: 2.5rem;
+    }
+    .header__0 {
+        width: 150px;
+        height: 150px;
+        bottom: 3rem;
+        right: 3rem;
+    }
+    .soc-bt {
+        width: 35px;
+        height: 35px;
+    }
+    .soc-bt_vk {
+        height: 35px;
     }
 }
 @media (max-width: 900px) {
@@ -1336,7 +1329,7 @@ main {
     }
 
 
-    .soc-bt {
+    .soc-bt_vk {
         display: none;
     }
 
@@ -1457,13 +1450,18 @@ main {
     .footer__container {
         padding: 0 30px;
     }
+
+    .header__0 {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 @media (max-width: 450px) {
     .page1 .palma_l3, .page3 .palma_l3 {
         bottom: -27px;
-        left: calc(50% - 229px);
-        width: 458px;
+        left: calc(50% - 200px);
+        width: 400px;
     }
     .page1 .palma_r3, .page3 .palma_r3 {
         bottom: -29px;
@@ -1471,18 +1469,18 @@ main {
         width: 126%;
     }
     .page3_text_title {
-        top: 26%;
+        top: 22%;
         font-size: 40px;
     }
     .page3_text_title2 {
-        top: 33%;
+        top: 32%;
         right: 3.5%;
         font-size: 40px;
     }
     .page3 .palma_l3 {
         bottom: -27px;
-        left: calc(50% - 223px);
-        width: 437px;
+        left: calc(50% - 200px);
+        width: 400px;
     }
     .logo2 {
         width: 232px;
@@ -1508,8 +1506,11 @@ main {
     .partners__row-2 {
         padding-top: 8px;
     }
+    .page4 {
+        height: 135vh;
+    }
     .page4__wheare-buy {
-        gap: 25px;
+        gap: 5px;
         margin: 20px;
     }
     .page4__text_title {
@@ -1550,6 +1551,11 @@ main {
     .files {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .header__0 {
+        width: 50px;
+        height: 50px;
     }
 }
 

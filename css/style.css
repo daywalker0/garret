@@ -733,7 +733,7 @@ main {
     justify-content: space-between;
 }
 
-.files {
+.files, .privacy {
     display: flex;
     gap: 40px;
 }
@@ -1256,6 +1256,9 @@ main {
     .page4 {
         min-height: 160vh;
     }
+    .footer__container {
+        padding: 0 20px;
+    }
 }
 @media (max-width: 600px) {
     .menu {
@@ -1457,6 +1460,12 @@ main {
         width: 75px;
         height: 75px;
     }
+
+    
+    .files, .privacy {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1552,11 +1561,6 @@ main {
 
     .item {
         font-size: 5.5rem;
-    }
-
-    .files {
-        flex-direction: column;
-        gap: 10px;
     }
 
     .header__0 {

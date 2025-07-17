@@ -1630,3 +1630,15 @@ main {
         width: 33%;
     }
 }
+
+@media screen and (max-height: 660px) {
+    .page1 {
+        height: 120vh;
+    }
+    .page4__container {
+        top: 23%;
+    }
+    .page4 {
+        height: 130vh;
+    }
+}
